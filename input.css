@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-size: cover;
+    background-position: 0 0;
+    background-attachment: fixed; }
+    body.homepage {
+      background-image: url("images/homepage-blurred.jpg"); }
+    body.sticky-blur {
+      background-image: url("images/default-blurred.jpg"); }
+    body.keep-cleared {
+      background-image: url("images/keep-cleared-blurred.jpg"); }
+    body.line-style {
+      background-image: url("images/line-style-blurred.jpg"); }
+    body.background-less {
+      background: #5a5a5a; }
+  
+
+/*
+=====================|
+                     |
+     Image           |
+                     |
+=====================|
+*/
+
+.bg-image {
+    background-image: url("https://images.blackmagicdesign.com/images/products/davinciresolve/overview/onesolution/carousel/edit.jpg");
+    height: 50%;
+}
+
+
+@media (min-width: 512px) {
+    .md\:hide-text:after {
+        content: "urkart";
+    }
+}
+
+
+/*
+=====================|
+                     |
+     Animations      |
+                     |
+=====================|
+*/
+
+
+.slide-in {
+    animation: slide-in 500ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0.3;
+        transform: translateY(3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fade-in {
+    animation-delay: 5000ms;
+    animation: fade-in 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        scale: 0.7;
+    }
+
+    100% {
+        opacity: 100;
+        scale: 1;
+    }
+}
+
+
+/*
+=====================|
+                     |
+     Scrollbar       |
+                     |
+=====================|
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(15 23 42);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(9, 10, 27);
+    border-radius: 0.5rem
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(9, 10, 27, 0.7);
+    /* Firefox */
+    -moz-transition: all 1s ease-in;
+    /* WebKit */
+    -webkit-transition: all 1s ease-in;
+    /* Opera */
+    -o-transition: all 1s ease-in;
+    /* Standard */
+    transition: all 1s ease-in;
+}
+
+
+
+
+
+.custom-shape-divider-bottom-1651988776 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1651988776 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 105px;
+}
+
+.custom-shape-divider-bottom-1651988776 .shape-fill {
+    fill: #1F2937;
+}
+
+
+/*
+======================|
+                      |
+  Transition Effects  |
+                      |
+======================|
+*/
+
+
+.slide-left {
+    animation: slide-left 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.slide-right {
+    animation: slide-right 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.slide-right-reverse {
+    animation: slide-right-reverse 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-right-reverse {
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.slide-left-reverse {
+    animation: slide-left-reverse 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-left-reverse {
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.slide-up {
+    animation: slide-up 500ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-180%);
+    }
+}
+
+.slide-up-after {
+    animation: slide-up-after 500ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-up-after {
+    100% {
+        transform: translateY(0%);
+    }
+
+    0% {
+        transform: translateY(-150%);
+    }
+}
