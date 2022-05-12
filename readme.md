@@ -1,4 +1,4 @@
 # IST Assignment
 To view a live webpage of the site just click here:
 
-[![](https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png)](https://github.com/user/repository/subscription)
+[![](https://upload.wikimedia.org/wikipedia/commons/c/c1/Icons8_flat_ok.svg)](https://sethburkart.github.io/IST-2022-web/src/)
