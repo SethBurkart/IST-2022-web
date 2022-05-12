@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="My literall trash porfolio lol">
+    <meta name="description" content="hehe seth burkart protfolio">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://159.196.129.35:5501/src/svg/hahaha.jpg/">
+    <meta property="og:title" content="My literall trash porfolio lol">
+    <meta property="og:description" content="hehe seth burkart protfolio">
+    <meta property="og:image" content="svg/hahaha.jpg">
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="output.css" />
+    <script
+        src="https://raw.githubusercontent.com/locomotivemtl/locomotive-scroll/master/dist/locomotive-scroll.min.js">
+    </script>
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll();
+        })();
+    </script>
+
+    <script src="IntersectionObserver.js" defer></script>
+    <script src="content.js"></script>
+    <title>Epic Portfolio</title>
+</head>
+
+<body class="bg-gray-900 overflow-x-clip">
+
+    <section
+        class="text-white relative w-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-visible">
+
+        <!--Header-->
+        <div class="pb-5 width-full lg:px-8">
+            <div class="relative flex items-center justify-between">
+                <!--Left Content-->
+                <a href="/" aria-label="Loopin" title="Loopin"
+                    class="inline-flex items-center text-indigo-400 hover:text-indigo-600">
+                    <svg class="transition-colors duration-500" viewBox="0 0 24 24" stroke-linejoin="round"
+                        stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
+                        fill="none">
+                        <rect x="3" y="1" width="7" height="12"></rect>
+                        <rect x="3" y="17" width="7" height="6"></rect>
+                        <rect x="14" y="1" width="7" height="6"></rect>
+                        <rect x="14" y="11" width="7" height="12"></rect>
+                    </svg>
+                    <span
+                        class="flex transition-colors duration-500 no-underline hover:no-underline font-bold text-2xl lg:text-3xl tracking-wide"
+                        href="#">
+                        Seth<span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500 md:hide-text pl-2">
+                            B</span>
+                    </span>
+                </a>
+                <!--Middle Content-->
+                <ul class="flex items-center space-x-8 transition duration-1000 ease-in-out" id="autohide">
+                    <li></li>
+                    <li><a onClick="slide_left('/src/behind.html')" data-instant-intensity="10"
+                            class="slide-up-after inline-flex items-center justify-center py-2 px-2 lg:px-4 font-medium tracking-wide text-white transition duration-200 rounded-xl bg-blue-500 hover:bg-blue-700 focus:outline-none">
+                            Behind The Scenes</a></li>
+                    <li></li>
+                </ul>
+                <!--Right Content-->
+                <ul class="flex items-center space-x-8 lg:flex min-h-8">
+                    <li>
+                        <a href="/"
+                            class="font-medium tracking-wide text-gray-200 transition duration-300 hover:text-blue-200 p-5 inline-flex">
+                            Login
+                        </a>
+                        <a href="/src/index.html"
+                            class="inline-flex items-center justify-center py-1 px-2 lg:py-2 lg:px-4 font-medium tracking-wide text-white transition duration-200 rounded-xl shadow-md bg-slate-400 hover:scale-105 focus:outline-none"
+                            aria-label="Sign up" title="Sign up">
+                            Sign up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-screen-xl px-4 py-64 mx-auto lg:items-center lg:flex relative z-10 slide-out-after">
+            <div class="max-w-3xl mx-auto text-center slide-left-reverse">
+                <h1
+                    class="h1 relative text-5xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+                    Hi, I'm Seth
+                </h1>
+
+                <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+                    Video Production for over 5 Years and Frontend Web-dev for over a year!
+                </p>
+
+                <div data-scroll data-scroll-speed="5" class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a remove-class="opacity-0" add-class="" delay="500" data-scroll data-scroll-speed="5"
+                        class="animate transition duration-500 block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
+                        onClick="document.getElementById('goto').scrollIntoView();">
+                        Let's Go!
+                    </a>
+
+                    <a remove-class="opacity-0" add-class="" delay="500"
+                        class="animate transition duration-500 block w-full px-12 py-3 text-sm font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+                        href="/about">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1651988776" id="goto">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-800 pt-32 -m-1">
+        <div class="py-64 bg-gray-800 bg-fixed bg-center bg-no-repeat bg-cover bg-image shadow-inner brightness-75">
+        </div>
+    </section>
+
+
+    <section class="bg-gray-800 py-32 p-10 px-16 lg:px-32">
+
+        <div class="text-gray-100 lg:flex">
+            <div class="flex-1 p-5 shadow-inner">
+                <video class="p-8 rounded-xl" id="hero-video" preload="" playsinline="" muted="" controlslist="nodownload" disablepictureinpicture="" x-webkit-airplay="deny" autoplay>
+                    <source src="https://downloads.blackmagicdesign.com/videos/products/davinciresolve/landing/hero/20220301-32980e/hero.hd.1080p.mp4" type="video/mp4">
+                    <source src="https://downloads.blackmagicdesign.com/videos/products/davinciresolve/landing/hero/20220301-32980e/hero.hd.720p.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>            </div>
+            <div class="flex-1 text-2xl block m-auto">
+                <span class="font-bold text-2xl">DaVinci Resolve</span> is a powerful video editing software that allows
+                you to create professional looking
+                videos with ease. It has a wide range of features that make it easy to edit your videos the way you
+                want, and it also supports up to 16K resolution and 120 FPS Video.
+            </div>
+        </div>
+
+
+        <div class="pt-64 py-64 p-64 flex flex-wrap justify-between sm:hidden">
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="10" width="600" height="336" src="https://www.youtube.com/embed/FGXDKrUoVrw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="50" width="600" height="336" src="https://www.youtube.com/embed/6xncCLKC7gY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="60" width="600" height="336" src="https://www.youtube.com/embed/W0Luy1Iouic"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="70" width="600" height="336" src="https://www.youtube.com/embed/EDHr5IMFRUk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="80" width="600" height="336" src="https://www.youtube.com/embed/Fc1P-AEaEp8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="90" width="600" height="336" src="https://www.youtube.com/embed/XF7b_MNEIAg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="100" width="600" height="336"
+                src="https://www.youtube.com/embed/WApuXPDR5Q0" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="110" width="600" height="336"
+                src="https://www.youtube.com/embed/SezZaeEt1SA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="120" width="600" height="336"
+                src="https://www.youtube.com/embed/CMNry4PE93Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="border-2 m-4 animate shadow-xl rounded-lg border-gray-600" remove-class="opacity-0"
+                add-class="slide-in" delay="130" width="600" height="336"
+                src="https://www.youtube.com/embed/DzlH5SDGoyA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://instant.page/5.1.0" type="module"
+        integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+
+</html>

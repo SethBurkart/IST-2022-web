@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind The Scenes</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="content.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/brusher@0.1.4/dist/brusher.min.js">
+        const brusher = new Brusher({
+            image: './svg/city_landscape_3.svg'
+        });
+
+        brusher.init();
+    </script>
+
+</head>
+
+<body class="bg-gray-900 overflow-x-clip">
+
+    <section
+        class="text-white relative w-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-visible background">
+        <div>
+            <!--Header-->
+            <div class="pb-5 width-full lg:px-8">
+                <div class="relative flex items-center justify-between">
+                    <!--Left Content-->
+                    <a href="/" aria-label="Loopin" title="Loopin"
+                        class="inline-flex items-center text-indigo-400 hover:text-indigo-600">
+                        <svg class="transition-colors duration-500" viewBox="0 0 24 24" stroke-linejoin="round"
+                            stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
+                            fill="none">
+                            <rect x="3" y="1" width="7" height="12"></rect>
+                            <rect x="3" y="17" width="7" height="6"></rect>
+                            <rect x="14" y="1" width="7" height="6"></rect>
+                            <rect x="14" y="11" width="7" height="12"></rect>
+                        </svg>
+                        <span
+                            class="flex transition-colors duration-500 no-underline hover:no-underline font-bold text-2xl lg:text-3xl tracking-wide"
+                            href="#">
+                            Seth<span
+                                class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500 md:hide-text pl-2">
+                                B</span>
+                        </span>
+                    </a>
+                    <!--Middle Content-->
+                    <ul class="flex items-center space-x-8 transition duration-1000 ease-in-out" id="autohide">
+                        <li></li>
+                        <li><a onClick="slide_right('/src/')" data-instant-intensity="10"
+                                class="slide-up-after inline-flex items-center justify-center py-2 px-2 lg:px-4 font-medium tracking-wide text-white transition duration-200 rounded-xl bg-blue-500 hover:bg-blue-700 focus:outline-none">
+                                Home</a></li>
+                    </ul>
+                    <!--Right Content-->
+                    <ul class="flex items-center space-x-8 lg:flex min-h-8">
+                        <li>
+                            <a href="/"
+                                class="font-medium tracking-wide text-gray-200 transition duration-300 hover:text-blue-200 p-5 inline-flex">
+                                Login
+                            </a>
+                            <a href="/src/index.html"
+                                class="inline-flex items-center justify-center py-2 px-4 font-medium tracking-wide text-white transition duration-200 rounded-xl shadow-md bg-slate-400 hover:scale-105 focus:outline-none pr-4"
+                                aria-label="Sign up" title="Sign up">
+                                Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="max-w-screen-xl px-4 py-64 mx-auto lg:items-center lg:flex relative z-10 slide-out-after">
+                <div class="max-w-3xl mx-auto text-center slide-right-reverse">
+                    <h1
+                        class="h1 relative text-5xl font-extrabold text-transparent sm:text-7xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+                        Behind... The Scenes
+                    </h1>
+
+                    <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+                        Video Production for over 5 Years and Frontend Web-dev for over a year!
+                    </p>
+
+                    <div data-scroll data-scroll-speed="5" class="flex flex-wrap justify-center gap-4 mt-8">
+                        <a remove-class="opacity-0" add-class="" delay="500" data-scroll data-scroll-speed="5"
+                            class="animate transition duration-500 block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-white focus:outline-none focus:ring"
+                            onClick="document.getElementById('goto').scrollIntoView();">
+                            Let's Go!
+                        </a>
+
+                        <a remove-class="opacity-0" add-class="" delay="500"
+                            class="animate transition duration-500 block w-full px-12 py-3 text-sm font-medium text-white border border-blue-600 rounded sm:w-auto hover:bg-blue-600 active:bg-blue-500 focus:outline-none focus:ring"
+                            href="/about">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-shape-divider-bottom-1651988776" id="goto">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-800 py-64 p-10 px-8 lg:px-32 text-gray-100 lg:flex">
+        <div class="flex-1">
+            <img src="./svg/desk-illustration.svg" width="600"
+                class="block m-auto p-4 rounded-3xl hover:scale-105 hover:shadow-2xl hover:border-slate-800 border-gray-800 border-8 transition duration-500" />
+        </div>
+
+        <div class="flex-1">
+            <h1 class="text-white font-bold text-4xl pb-4">What is the Internet?</h1>
+            The internet is a global network of computers that allows people to share information and access online
+            resources.
+            It works by using a system of interconnected networks that allow computers to communicate with each other.
+            Data is stored on servers that are connected to the internet, and people can access it using a variety of
+            devices,
+            including computers, smartphones, and tablets. The data is transmitted over the internet using a variety of
+            protocols, including the Hypertext Transfer Protocol (HTTP).
+        </div>
+    </section>
+
+
+    <section class="bg-gray-900 p-10 px-8 lg:px-32 text-gray-100 lg:flex">
+        <div class="flex-1">
+            <h1 class="text-white font-bold text-4xl pb-4">What's an IP?</h1>
+            The Internet Protocol (IP) is a set of rules that govern how computers communicate over a network. It
+            defines
+            how data is packaged into datagrams (also called packets) and transmitted over the network from one computer
+            to
+            another.
+
+            Examples of Internet Protocols include the Transmission Control Protocol (TCP), the User Datagram Protocol
+            (UDP), and the Internet Control Message Protocol (ICMP).
+
+            A packet is a unit of data that is transmitted over a network. It contains the data to be transmitted, as
+            well
+            as information about the source and destination of the data. packets are routed from one computer to another
+            based on their IP addresses.
+
+            Internet Protocols work by defining a set of rules for how data is packaged and transmitted over a network.
+            These rules specify things like the size of the datagram, the format of the data, and the order in which the
+            datagram is sent.
+        </div>
+        <div class="flex-1">
+            <img src="./svg/browser_icon_3.svg" width="600"
+                class="block m-auto p-4 rounded-3xl hover:scale-105 hover:shadow-2xl hover:border-slate-900 border-gray-900 border-8 shadow-blue-600 transition duration-500" />
+        </div>
+    </section>
+
+
+    <section class="bg-gray-800 py-64 p-10 px-8 lg:px-32 text-gray-100 lg:flex">
+        <div class="flex-1">
+            <img src="./svg/Icons/miscellaneous_icons_6.svg" width="400" height="600"
+                class="block m-auto p-4 rounded-3xl hover:scale-105 hover:shadow-2xl hover:border-slate-800 border-gray-800 border-8 shadow-blue-600 transition duration-500" />
+        </div>
+
+        <div class="flex-1">
+            <h1 class="text-white font-bold text-4xl pb-4">The Future For The Internet</h1>
+            The Internet has already had a profound impact on daily life, and this is only likely to continue in the
+            next 10 years. By providing instant access to a wealth of information and communication tools, the Internet
+            has made life easier and more efficient in many ways. In the next 10 years, the Internet is likely to become
+            even more ingrained in daily life, with even more people using it for work, play, and communication. The
+            Internet is also likely to become more mobile, with more people accessing it on their smartphones and other
+            devices. As the Internet becomes more and more ubiquitous, it is likely to have an even greater impact on
+            daily life.
+        </div>
+    </section>
+
+
+    <section class="bg-gray-800 py-64 p-10 px-8 lg:px-32 text-gray-100 lg:flex">
+        <div class="flex-1">
+            <img src="./svg/building_illustration_1.svg" width="400" height="600"
+                class="block m-auto p-4 rounded-3xl hover:scale-105 hover:shadow-2xl hover:border-slate-800 border-gray-800 border-8 shadow-blue-600 transition duration-500" />
+        </div>
+
+        <div class="flex-1">
+            <h1 class="text-white font-bold text-4xl pb-4">Reflection</h1>
+            The website is very functional, with a simple navbar and content to look at which is both clear and informative.
+            By using JavaScript I have made the websites experience more smooth and fluid. From the transition between the
+            home and behind the scenes page to scroll animations Javascript is important for a great user experience. The
+            website was also designed in dark mode in order to reduce eye strain and create a more modern and sleek look for
+            the website. CSS animations are also heavily included with make the website seem more professional and user
+            friendly. The website is also responsive making it fully functional across all devices.
+        </div>
+    </section>
+
+
+
+
+    <script src="https://instant.page/5.1.0" type="module"
+        integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+
+</html>
